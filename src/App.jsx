@@ -8,7 +8,8 @@ import Orders from "./pages/orders/Orders"
 import Messages from "./pages/messages/Messages"
 import Message from "./pages/message/Message"
 import MyGigs from "./pages/myGigs/MyGigs"
-
+import './app.scss'
+import Home from "./pages/home/Home";
 
 function App() {
 
@@ -27,6 +28,10 @@ function App() {
       path: "/",
       element: <Layout />,
       children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
         {
           path: "/gigs",
           element: <Gigs />,
